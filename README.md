@@ -1,14 +1,14 @@
 # run_analysis
 Homework assignment for Getting and Cleaning Data class
-
+<br>
 There are two packages that must be installed in order to ensure the script works.
-They are dplyr and plyr. 
-
+They are dplyr and plyr. <br>
+<br>
 The script extracts a wearable zipped file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 and then manipulates it in order to create a data frame that contains summarized data for all subjects and 
-for the activity they were performing. 
-
-The following steps are performed in order to accomplish this task.
+for the activity they were performing. <br>
+<br>
+The following steps are performed in order to accomplish this task. <br>
 1. The packages dplyr and plyr are both intalled. <br>
 2. The file is downloaded to the working directory where it is unzipped. <br>
 3. The data files that contain information about the activities and features are extracted. <br>
