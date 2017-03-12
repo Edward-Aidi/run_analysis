@@ -1,5 +1,8 @@
 # run_analysis
-Homework assignment for Getting and Cleaning Data class
+Homework assignment for Getting and Cleaning Data class <br>
+<br>
+See the code book for a listing of the data frames that are created. <br>
+See the file called run_analysis for the actual script. <br>
 <br>
 There are two packages that must be installed in order to ensure the script works.
 They are dplyr and plyr. <br>
