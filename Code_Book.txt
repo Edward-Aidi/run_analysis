@@ -1,1 +1,61 @@
 #Code Book
+
+Data Frame: activitylabels (dataframe)
+Description: The activitylabels contains the 6 different activities that are monitored.
+Columns:
+1. activitykey: integer: contains the primary key for the activity type.
+2. activity: factor: contains the descriptions for the activity. The activies are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, and LAYING.
+
+Data Frame: features (dataframe)
+Description: The activitylabels contains the 6 different activities that are monitored.
+Columns:
+1. featurekey: integer: contains the primary key for the feature.
+2. feature: factor: contains the name of the feature.
+
+Data Frame: testdata (dataframe)
+Description: This file contains the test data from the zip file. There are over 560 columns that contain various measures from the study. The measures contain values that are between -1 and 1. 
+
+Data Frame: testdatalables (dataframe)
+Description: This contains 1 column of data that contains the activity key. This will later be merged to the testdata file.
+Columns: 
+1. activitykey: integer:  contains the primary key for the activity type.
+
+Data Frame: testdatasubject (dataframe)
+Description: This contains 1 column of data that contains the subject key. This will later be merged to the testdata file.
+Columns:
+1. subjectkey: integer: Contains the primary key for subject.
+
+
+Data Frame: trainingdata (dataframe)
+Description: This file contains the training data from the zip file. There are over 560 columns that contain various measures from the study. The measures contain values that are between -1 and 1. 
+
+Data Frame: trainingdatalables (dataframe)
+Description: This contains 1 column of data that contains the activity key. This will later be merged to the trainingdata file.
+Columns: 
+1. activitykey: integer:  contains the primary key for the activity type.
+
+Data Frame: trainingdatasubject (dataframe)
+Description: This contains 1 column of data that contains the subject key. This will later be merged to the trainingdata file.
+Columns:
+1. subjectkey: integer: Contains the primary key for subject.
+
+
+Data Frame: mergedtraining (dataframe)
+Description: the columns from the trainingdatasubject are combined to the traiining data set.
+
+
+Data Frame: mergedtraining2 (dataframe)
+Description: The column from the traininglables are combined with the mergedtraining.
+
+Data Frame: mergedtest (dataframe)
+Description: the columns from the testdatasubject are combined to the test data set.
+
+
+Data Frame: mergedtest2 (dataframe)
+Description: The column from the testlables are combined with the mergedtest.
+
+Data Frame: mergedfinal (dataframe)
+Description: Columns are extracted if they contain a mean or std. The columns that they'll later be grouped to are also kept.
+
+Data Frame: groupedaggregate (dataframe)
+Description: The mean for all the subjects and activities are calculated in this data frame.
