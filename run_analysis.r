@@ -71,4 +71,7 @@ groupedaggregate <- aggregate(mergedfinal[, 4:69], list(mergedfinal$activity, me
 groupedaggregate <- plyr::rename(groupedaggregate, c("Group.1" = "activity"))
 groupedaggregate <- plyr::rename(groupedaggregate, c("Group.2" = "activitykey"))
 groupedaggregate <- plyr::rename(groupedaggregate, c("Group.3" = "subject"))
+
+#Write the dataset
+write.table(groupedaggregate, "wearable.txt", row.names = FALSE)
                             
